@@ -1,0 +1,110 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{etoolbox} % Required for conditional logic
+\usepackage[pdftex]{hyperref} % Required for including links
+\usepackage{changepage}
+
+\usepackage[a4paper,top=25mm,bottom=20mm,left=22mm,right=22mm,footskip=10mm]{geometry}
+
+% Set fonts
+\RequirePackage[osf]{mathpazo} % Palatino with oldstyle figures
+\newcommand\liningnums[1]{\fontfamily{ppl}\selectfont#1} % Enable switch to lining nums
+\RequirePackage{amsmath, amssymb}
+\RequirePackage{eulervm}
+\RequirePackage[scaled=.8819]{sourcecodepro} % Source Code Pro typeface for monospace
+
+% Paragraph indentation
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8.5pt}
+
+%%
+% Title
+\RequirePackage{titlesec}
+
+%%
+% Headings
+
+% Heading 1
+\titleformat{\section} % Section type being modified
+{\normalfont\liningnums\bfseries}
+{\thesection}{0.333em} % Space between the title and label
+{\MakeUppercase}
+\titlespacing*{\section}{0pt}{1.5em}{0pt}
+
+% Heading 2
+\titleformat{\subsection}
+{\normalfont\bfseries}
+{\thesubsection}{0.4em}{}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+% Heading 3
+\titleformat{\subsubsection}
+{\normalfont\bfseries\itshape}
+{\textup{\thesubsubsection}}{0.4em}{}
+\titlespacing*{\subsubsection}{0pt}{0pt}{0pt}
+
+
+%%
+% Lists
+\RequirePackage{enumitem} % Required for list customisation
+\setlist{leftmargin=*, noitemsep, nolistsep} % No left margin and space around/within lists
+\setlist[itemize]{label={\tiny\textsuperscript{\textbullet}}}
+\setlist[description]{font=\normalfont\itshape\space,leftmargin=2.2cm,style=nextline,itemsep=5pt}
+
+%%
+% Image stuff
+\RequirePackage{graphicx} % Required for including images
+
+
+%%
+% Metadata
+\RequirePackage{xcolor} % Required for defining custom colours
+\definecolor{linkBlue}{cmyk}{100,50,0,0}
+\hypersetup{
+	% bookmarks=true,
+	% bookmarksopen=true,
+	pdfpagemode=UseOutlines,
+	colorlinks,
+	citecolor=linkBlue,
+	urlcolor=linkBlue,
+	linkcolor=linkBlue,
+}
+
+\begin{document}
+
+\begin{center}
+	\Large{23rd European Agent Systems Summer School\\
+	\textit{\bfseries{}Tutorial Proposal}}
+	\vspace{0.5cm}
+\end{center}
+
+
+\begin{description}\bfseries
+	\item[Title:] Title of the proposed tutorial.
+	
+	\item[Abstract:] A short paragraph describing the tutorial (100-300 words), suitable for publication at the EASSS '23 website.
+	
+	\item[Topics:] Detailed list of topics covered in the tutorial in terms of a list, preferably in the order in which the tutorial will cover them.
+	
+	\item[Type:] A clear indication of whether the tutorial takes a theoretical or applications-oriented perspective on the topics covered. We encourage tutorial proposals that balance the two perspectives.
+	
+	\item[Level:] Please indicate the target audience and level of the course. If there are prerequisites, describe what knowledge will be assumed by the tutorial.
+	
+	\item[Materials:] Please indicate what kind of teaching materials you intend to provide. Note that we will require materials by the date above, so that they can be distributed to EASSS attendees in advance.
+	
+	\item[Duration:] Tutorials are typically 3 hours long. If you have good reasons for wanting to deviate from this standard, please explain this in your proposal.
+	
+	\item[Equipment:] Please list any special equipment (beyond data projector and whiteboard) that you might need.
+\end{description}
+
+\section*{Tutor(s) information}
+
+Please provide name, affiliation, full contact detail, a link to the personal homepage, short biographical sketch (around 100 words per tutor, suitable for publication at the EASSS '23 website), and details on relevant teaching experience of each tutor.
+
+\section*{Additional information}
+
+Additional information on the proposed tutorial. Include as much detail as you see fit.
+
+\end{document}
