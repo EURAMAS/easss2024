@@ -22,6 +22,44 @@
 		html {
 			scroll-behavior: smooth;
 		}
+		td {
+			border:1px solid #000;
+			text-align:center
+		}
+		th {
+			height:3em;
+			text-align:center
+		}
+		.keynote {
+			background-color: darkgreen;
+			color:white;
+		}
+		.tutorial {
+			background-color: yellow;
+			color:black;
+		}
+		.general {
+			background-color:purple;
+			color:white;
+		}
+		.hackathon {
+			background-color:skyblue;
+			color:black;
+		}
+		.groups {
+			background-color:red;
+			color:white;
+		}
+		.early {
+			background-color:darkgreen;
+			color:white;
+			padding:4px;
+		}
+		.normal {
+			background-color:red;
+			color:white;
+			padding:4px;
+		}
 	</style>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H3R7Q87MEP"></script>
@@ -55,8 +93,8 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link" href="#about" aria-disabled="true">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#cfp" aria-disabled="true">Call for Participation</a></li>
 					<li class="nav-item"><a class="nav-link" href="#cft" aria-disabled="true">Call for Tutorials</a></li>
+					<li class="nav-item"><a class="nav-link" href="#cfp" aria-disabled="true">Call for Participation</a></li>
 					<li class="nav-item"><a class="nav-link" href="#programme" aria-disabled="true">Programme</a></li>
 					<li class="nav-item"><a class="nav-link" href="#colocated" aria-disabled="true">Colocated Events</a></li>
 					<li class="nav-item"><a class="nav-link" href="#sponsors" aria-disabled="true">Sponsors</a></li>
@@ -140,26 +178,10 @@
 							School:
 						</p>
 						<p style="text-align:right">
-							19-23 August 2024
+							<s style="color:red">19-23 August 2024</s></br>
+							19-24 August 2024
 						</p>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="cfp">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-offset-3 col-md-6 col-sm-12">
-					<div class="section-title">
-						<h3 style="text-align:left">Call For Participation</h3>
-					</div>
-				</div>
-				<div style="text-align: justify">
-					<p>
-						T.B.C.
-					</p>
 				</div>
 			</div>
 		</div>
@@ -246,6 +268,134 @@
 		</div>
 	</section>
 
+	<section id="cfp">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6 col-sm-12">
+					<div class="section-title">
+						<h3 style="text-align:left">Call For Participation</h3>
+					</div>
+				</div>
+				<div style="text-align: justify">
+					<p>
+						The 24th European Agent Systems Summer School (EASSS) will be held in the
+						<a href="https://www.ucd.ie/cs/">School of Computer Science<a/> of 
+						<a href="https://www.ucd.ie">University College Dublin</a> from August 19th 
+						until August 24th 2024.
+					</p>
+					<p>
+						This year, we are delighted to offer a rich programme of both introductory and
+						advanced courses on a range of topics in the area of Autonomous Agents and
+						Multi-Agent Systems including: Reinforcement Learning (RL); Coordination, Organisations,
+						Institutions, Norms and Ethics (COINE), Engineering Multi-Agent Systems (EMAS) and
+						Agent-Based Modelling and Simulation (ABMS). Further details can be found <a href="#accepted">here</a>.
+					</p>
+					<p style="font-style: italic;">
+						In addition to these tutorials, we will invite topical keynote talks from leading researchers.
+					</p>
+					<p>
+						In addition to the tutorials, there will be an opportunity to to introduce yourself and your research
+						work in a "Me-in-3" session.  You will also be invited to engage in working groups to develop research
+						ideas around a given theme.  These ideas will be presented on the last day of EASSS and participants will
+						be invited to co-author and publish (via arxiv.org) a paper based on their working group.
+					</p>
+					<p>
+						Finally, on Saturday 24th August, we will hold a school hackathon where teams will attempt to
+						develop prototypes that will be presented. A prize will be awarded to the team that develops the
+						best prototype.
+					</p>
+					<h4>Registration</h4>
+					<p>
+						To register for EASSS 2024, please complete the <a href="https://forms.gle/3uZezVgEa1ftGtwn6">Registration Form</a>.
+					</p>
+
+					<table width="80%">
+						<tr>
+							<th></th>
+							<th>Until</th>
+							<th>Student (Fee)</th>
+							<th>Non-Student (Fee)</th>
+							<th>Industry (Fee)</th>
+						</tr>
+						<tr style="height:2.8em">
+							<td style="text-align:left">
+								Early Bird:EASSS Only
+							</td>
+							<td>
+								31st July, 2024
+							</td>
+							<td>
+								<span class="early">&euro;270</span>
+							</td>
+							<td>
+								<span class="early">&euro;300</span>
+							</td>
+							<td>
+								<span class="early">&euro;350</span>
+							</td>
+						</tr>
+						<tr style="height:2.8em">
+							<td style="text-align:left">
+								Early Bird: EASSS + EUMAS
+							</td>
+							<td>
+								31st July, 2024
+							</td>
+							<td>
+								<span class="early">&euro;450</span>
+							</td>
+							<td>
+								<span class="early">&euro;550</span>
+							</td>
+							<td>
+								<span class="early">&euro;600</span>
+							</td>
+						</tr>
+						<tr style="height:2.8em">
+							<td style="text-align:left">
+								Normal: EASSS Only
+							</td>
+							<td>
+								19th August, 2024
+							</td>
+							<td>
+								<span class="normal">&euro;300</span>
+							</td>
+							<td>
+								<span class="normal">&euro;350</span>
+							</td>
+							<td>
+								<span class="normal">&euro;400</span>
+							</td>
+						</tr>
+						<tr style="height:2.8em">
+							<td style="text-align:left">
+								Normal: EASSS + EUMAS
+							</td>
+							<td>
+								19th August, 2024
+							</td>
+							<td>
+								<span class="normal">&euro;500</span>
+							</td>
+							<td>
+								<span class="normal">&euro;600</span>
+							</td>
+							<td>
+								<span class="normal">&euro;650</span>
+							</td>
+						</tr>
+					</table>
+					<p style="padding-top:16px">
+						Upon receipt of a completed form, we will send you an email with a payment link for the correct
+						amount based on the payment table above. If you don't receive a payment link within 24 hours of
+						submitting the form, please contact <a href="mailto:rem.collier@ucd.ie">rem.collier@ucd.ie</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="programme">
 		<div class="container">
 			<div class="row">
@@ -254,10 +404,132 @@
 						<h3 style="text-align:left">Programme</h3>
 					</div>
 				</div>
-				<div style="text-align: justify">
+				<div style="text-align: justify;">
 					<p>
-						T.B.C.
+						We are delighted to announce the programme for EASSS 2024. This years programme 
+						has been organised around 4 key research areas of the Multi-Agent Systems Community:
 					</p>
+					<ul>
+						<li>Reinforcement Learning (RL)</li>
+						<li>Coordination, Organisations, Institutions, Norms and Ethics (COINE)</li>
+						<li>Engineering Multi-Agent Systems (EMAS)</li>
+						<li>Agent-Based Modelling and Simulation (ABMS)</li>
+					</ul>
+					<p>
+						Each day will focus on one of these areas and will consist a keynote talk by a leading
+						researcher together with one or two tutorials on that area.
+					</p>
+					<p>
+						Along side this, we will be running a series of working groups where school participants
+						will work together to develop insights into a self selected research topic.  At the end
+						of the workshop, each group will present their findings. Following this, they will write
+						a group report which will be published on <a href="https://arxiv.org/">arxiv.org</a> and
+						linked to from the school website.
+					</p>
+					<p>
+						Finally, we have also added an additional day to the workshop (Saturday 24th August) when
+						we will run a hackathon challenge.
+					</p>
+					<table style="width:100%">
+						<tr>
+							<th></th>
+							<th>Monday</th>
+							<th>Tuesday</th>
+							<th>Wednesday</th>
+							<th>Thursday</th>
+							<th>Friday</th>
+							<th>Saturday</th>
+						</tr>
+						<tr>
+							<td>9:00</td>
+							<td rowspan="2">Registration</td>
+							<td class="keynote" rowspan="2">RL Keynote</td>
+							<td class="keynote" rowspan="2">COINE Keynote</td>
+							<td class="keynote" rowspan="2">EMAS Keynote</td>
+							<td class="keynote" rowspan="2">ABMS Keynote</td>
+							<td class="hackathon" rowspan="15">Hackathon</td>
+						</tr>
+						<tr>
+							<td>9:30</td>
+						</tr>
+						<tr>
+							<td>10:00</td>
+							<td class="general">Welcome</td>
+							<td class="tutorial" rowspan="3">Tutorial 1</td>
+							<td class="tutorial" rowspan="3">Tutorial 3</td>
+							<td class="tutorial" rowspan="3">Tutorial 4</td>
+							<td class="tutorial" rowspan="3">Tutorial 6</td>
+						</tr>
+						<tr>
+							<td>10:30</td>
+							<td class="keynote" rowspan="2">School Keynote</td>
+						</tr>
+						<tr>
+							<td>11:00</td>
+						</tr>
+						<tr>
+							<td>11:30</td>
+							<td colspan="6">B R E A K</td>
+						</tr>
+						<tr>
+							<td>12:00</td>
+							<td class="general" rowspan="3">Me-in-3</td>
+							<td class="tutorial" rowspan="3">Tutorial 1</td>
+							<td class="tutorial" rowspan="3">Tutorial 3</td>
+							<td class="tutorial" rowspan="3">Tutorial 4</td>
+							<td class="tutorial" rowspan="3">Tutorial 6</td>
+						</tr>
+						<tr>
+							<td>12:30</td>
+						</tr>
+						<tr>
+							<td>13:00</td>
+						</tr>
+						<tr>
+							<td>13:30</td>
+							<td rowspan="2" colspan="6">L U N C H</td>
+						</tr>
+						<tr>
+							<td>14:00</td>
+						</tr>
+						<tr>
+							<td>14:30</td>
+							<td class="groups" rowspan="3">Idea Generation<br/>&<br/>Group Formation</td>
+							<td class="tutorial" rowspan="3">Tutorial 2</td>
+							<td class="groups" rowspan="3">Group Work</td>
+							<td class="tutorial" rowspan="3">Tutorial 5</td>
+							<td class="groups" rowspan="3">Group Work</td>
+						</tr>
+						<tr>
+							<td>15:00</td>
+						</tr>
+						<tr>
+							<td>15:30</td>
+						</tr>
+						<tr>
+							<td>16:00</td>
+							<td colspan="6">B R E A K</td>
+						</tr>
+						<tr>
+							<td>16:30</td>
+							<td class="groups" rowspan="3">Group Work</td>
+							<td class="tutorial" rowspan="3">Tutorial 2</td>
+							<td class="groups" rowspan="3">Group Work</td>
+							<td class="tutorial" rowspan="3">Tutorial 5</td>
+							<td class="groups" rowspan="3">Group Work</td>
+							<td class="hackathon" rowspan="4">Demonstrations<br/>&</br>Prize Giving</td>
+						</tr>
+						<tr>
+							<td>17:00</td>
+						</tr>
+						<tr>
+							<td>17:30</td>
+						</tr>
+						<tr>
+							<td>18:00</td>
+							<td class="general" colspan="5">W R A P &nbsp; U P</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
